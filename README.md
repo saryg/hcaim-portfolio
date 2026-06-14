@@ -1,23 +1,23 @@
-# MSc Human-Centred AI — TU Dublin
+# MSc Human-Centred AI - TU Dublin
 
-A selection of coursework from my MSc in Human-Centred Artificial Intelligence (2023–2024), which covered machine learning, deep learning, statistics, and AI ethics.
+A selection of coursework from my MSc in Human-Centred Artificial Intelligence (2023–2024), which covered machine learning, deep learning, statistics, and AI ethics. Projects span different data types: images (medical and facial), tabular health and survey data, and text.
 
 Key focus areas for projects:
-- **Dataset selection** — considering licensing, absence of PII, suitability for research use, and checking for class imbalances and other potential sources of bias before any modelling began
-- **Modelling** — monitoring for overfitting and underfitting throughout, evaluating final models with performance broken down by subgroup where relevant
-- **Explainability** — comparing blackbox and glassbox models, using XAI tools including GradCAM++ saliency maps and nearest neighbour visualisation
+- **Dataset selection:** considering licensing, absence of PII, suitability for research use, and checking for class imbalances and other potential sources of bias before any modelling began
+- **Modelling:** monitoring for overfitting and underfitting throughout, evaluating final models with performance broken down by subgroup where relevant
+- **Explainability:** comparing blackbox and glassbox models, using XAI tools including GradCAM++ saliency maps and nearest neighbour visualisation
 
 
 ---
 
 ## Projects
 
-### [Skin Lesion Classification — KNN & VGG16 Transfer Learning](skin_lesion_classification_knn_vgg16_transfer_learning.ipynb)
+### [Skin Lesion Classification - KNN & VGG16 Transfer Learning](skin_lesion_classification_knn_vgg16_transfer_learning.ipynb)
 *May 2024*
 
-Classifies 7 types of skin lesions from the HAM10000 dataset (~12,000 dermoscopy images). Fine-tuned a VGG16 network and compared it against a KNN baseline to evaluate the tradeoff between model complexity and performance. Class imbalance was a central challenge — the dataset is heavily skewed toward melanocytic nevi. Includes subgroup performance analysis by age, sex, and lesion localisation.
+Classifies 7 types of skin lesions from the HAM10000 dataset (~12,000 dermoscopy images). Fine-tuned a VGG16 network and compared it against a KNN baseline to evaluate the tradeoff between model complexity and performance. Class imbalance was a central challenge: the dataset is heavily skewed toward melanocytic nevi. Includes subgroup performance analysis by age, sex, and lesion localisation.
 
-- Dataset: [HAM10000](https://challenge.isic-archive.com/data/#2018) (ISIC 2018 Challenge) — © ViDIR Group, Medical University of Vienna ([doi:10.1038/sdata.2018.161](https://doi.org/10.1038/sdata.2018.161))
+- Dataset: [HAM10000](https://challenge.isic-archive.com/data/#2018) (ISIC 2018 Challenge), © ViDIR Group, Medical University of Vienna ([doi:10.1038/sdata.2018.161](https://doi.org/10.1038/sdata.2018.161))
 - Classes: melanoma, basal cell carcinoma, actinic keratoses, and 4 others
 - Techniques: transfer learning, data augmentation, class weighting, subgroup evaluation
 - Interpretability methods: GradCAM++ saliency maps (VGG16), nearest neighbour visualisation (KNN), glassbox vs blackbox comparison
@@ -27,10 +27,10 @@ Classifies 7 types of skin lesions from the HAM10000 dataset (~12,000 dermoscopy
 
 ---
 
-### [Diabetes Prediction — Neural Network](diabetes_prediction_neural_network.ipynb)
+### [Diabetes Prediction - Neural Network](diabetes_prediction_neural_network.ipynb)
 *March 2024*
 
-Predicts diabetes from a health survey dataset (42,415 instances, 22 variables). The focus was systematic evaluation rather than picking a single model — tested 10 ANN architectures, 8 batch sizes, and 3 optimisers, with dropout and early stopping. Includes subgroup analysis by sex and cholesterol level to check whether the model performs consistently across groups.
+Predicts diabetes from a health survey dataset (42,415 instances, 22 variables). The focus was systematic evaluation rather than picking a single model: tested 10 ANN architectures, 8 batch sizes, and 3 optimisers, with dropout and early stopping. Includes subgroup analysis by sex and cholesterol level to check whether the model performs consistently across groups.
 
 - Grid search across architecture, batch size, and optimiser combinations
 - Subgroup analysis to surface differential performance
@@ -41,10 +41,10 @@ Predicts diabetes from a health survey dataset (42,415 instances, 22 variables).
 
 ---
 
-### [Facial Age Classification — CNN on UTKFace](facial_age_classification_cnn_utkface.ipynb)
+### [Facial Age Classification - CNN on UTKFace](facial_age_classification_cnn_utkface.ipynb)
 *March 2024*
 
-Binary classification of face images as young (5–15) or old (50+) using a CNN trained on a filtered subset of UTKFace. The main focus is on how dataset construction decisions — filtering by ethnicity, balancing by gender — introduce or mitigate bias, and what that means for a deployed age detection system. Model performance was modest (75% on a small test set); the value of the notebook is in the reasoning around data choices rather than the results themselves.
+Binary classification of face images as young (5–15) or old (50+) using a CNN trained on a filtered subset of UTKFace. The main focus is on how dataset construction decisions (filtering by ethnicity, balancing by gender) introduce or mitigate bias, and what that means for a deployed age detection system. Model performance was modest (75% on a small test set); the value of the notebook is in the reasoning around data choices rather than the results themselves.
 
 - Dataset: UTKFace (filtered subset: 1,000 images, balanced by class and gender)
 - Explicit analysis of gender distribution within age classes and its effect on what the model learns
@@ -52,14 +52,14 @@ Binary classification of face images as young (5–15) or old (50+) using a CNN 
 - Interpretability methods: GradCAM++ saliency maps showing which facial features drive predictions
 - Deployed as a REST API using Docker and Azure
 
-`CNN` `image classification` `dataset bias` `ethics`
+`CNN` `image classification` `dataset bias` `ethics` `Docker` `Azure`
 
 ---
 
-### [Student Performance — Statistical Analysis](student_performance_statistical_analysis/)
+### [Student Performance - Statistical Analysis](student_performance_statistical_analysis/)
 *September–December 2023*
 
-Statistical investigation into factors affecting secondary school grades in Portugal (maths and Portuguese, 2005–2006). Covers the pipeline from research design through to PCA, split across 9 modular notebooks. Each notebook covers a distinct method with assumption testing before applying it. The value of this project is in the process rather than the findings — it demonstrates a systematic, rigorous approach to statistical analysis, including knowing when assumptions are violated and what that means for interpreting results.
+Statistical investigation into factors affecting secondary school grades in Portugal (maths and Portuguese, 2005–2006). Covers the pipeline from research design through to PCA, split across 9 modular notebooks. Each notebook covers a distinct method with assumption testing before applying it. The focus is on process rather than findings: it shows a methodical approach to statistics, including recognising when assumptions don't hold and thinking through what that means for the results.
 
 | Notebook | Topic |
 |----------|-------|
@@ -77,7 +77,7 @@ Statistical investigation into factors affecting secondary school grades in Port
 
 ---
 
-## Final Project — Investigating Bias Against Non-Native English Texts in AI Content Detectors
+## Final Project - Investigating Bias Against Non-Native English Texts in AI Content Detectors
 *September 2024*
 
 I evaluated three commercial AI detection tools (Sapling, Originality.ai, Winston AI) across 1,592 essays from 10 Asian countries using the [ICNALE corpus](https://language.sakura.ne.jp/icnale/).
