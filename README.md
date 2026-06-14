@@ -74,9 +74,11 @@ Statistical investigation into factors affecting secondary school grades in Port
 
 Covers the pipeline from research design through to PCA, split across 9 modular notebooks. Each notebook covers a distinct method with assumption testing before applying it. The focus is on process rather than findings: it shows a methodical approach to statistics, including recognising when assumptions don't hold and thinking through what that means for the results.
 
+
+[More info](student_performance_statistical_analysis/README.md)
+
 `scipy` `statsmodels` `regression` `ANOVA`
 
-[See more](student_performance_statistical_analysis/README.md)
 
 ---
 
