@@ -1,12 +1,19 @@
 # MSc Human-Centred AI - TU Dublin
 
-A selection of coursework from my MSc in Human-Centred Artificial Intelligence (2023–2024), which covered machine learning, deep learning, statistics, and AI ethics. Projects span different data types: images (medical and facial), tabular health and survey data, and text.
+Coursework from my MSc in Human-Centred Artificial Intelligence at TU Dublin (2023–2024), covering machine learning, deep learning, statistics, and AI ethics. Projects span different data types: images (medical and facial), tabular health and survey data, and text.
 
-Key focus areas for projects:
-- **Dataset selection:** considering licensing, absence of PII, suitability for research use, and checking for class imbalances and other potential sources of bias before any modelling began
-- **Modelling:** monitoring for overfitting and underfitting throughout, evaluating final models with performance broken down by subgroup where relevant
-- **Explainability:** comparing blackbox and glassbox models, using XAI tools including GradCAM++ saliency maps and nearest neighbour visualisation
+Across the projects there were a few key concerns:
+- choosing datasets carefully before any modelling began
+- checking for imbalances and potential sources of bias
+- monitoring for overfitting throughout
+- being honest about what the results can and can't claim
+- evaluating models by subgroup to check whether performance held across demographics
 
+Some of the hypotheses explored:
+- does a skin lesion classifier perform equally well across age groups and body sites?
+- does the way you filter and balance a facial image dataset affect what the model actually learns?
+- do AI content detectors flag non-native English writers at higher rates?
+- does drinking during the week predict grades?
 
 ---
 
@@ -56,22 +63,16 @@ Binary classification of face images as young (5–15) or old (50+) using a CNN 
 
 ---
 
-### [Student Performance - Statistical Analysis](student_performance_statistical_analysis/)
+### [Student Performance - Statistical Analysis](student_performance_statistical_analysis/) ([notebook summaries](student_performance_statistical_analysis/README.md))
 *September–December 2023*
 
-Statistical investigation into factors affecting secondary school grades in Portugal (maths and Portuguese, 2005–2006). Covers the pipeline from research design through to PCA, split across 9 modular notebooks. Each notebook covers a distinct method with assumption testing before applying it. The focus is on process rather than findings: it shows a methodical approach to statistics, including recognising when assumptions don't hold and thinking through what that means for the results.
+Statistical investigation into factors affecting secondary school grades in Portugal (maths and Portuguese, 2005–2006). 
 
-| Notebook | Topic |
-|----------|-------|
-| [a1](student_performance_statistical_analysis/a1_analysis_design.ipynb) | Analysis design & research questions |
-| [a2](student_performance_statistical_analysis/a2_data_description.ipynb) | Data description & summary statistics |
-| [a3](student_performance_statistical_analysis/a3_ci_and_htm.ipynb) | Confidence intervals & hypothesis testing |
-| [a4](student_performance_statistical_analysis/a4_assumption_testing.ipynb) | Assumption testing |
-| [a5](student_performance_statistical_analysis/a5_relationship_testing.ipynb) | Relationship testing |
-| [a6](student_performance_statistical_analysis/a6_linear_regression.ipynb) | Linear regression |
-| [a7](student_performance_statistical_analysis/a7_anova.ipynb) | ANOVA |
-| [a8](student_performance_statistical_analysis/a8_logistic_regression.ipynb) | Logistic regression |
-| [a9](student_performance_statistical_analysis/a9_pca.ipynb) | PCA |
+- does weekday alcohol consumption predict grades?
+- does family support make a difference?
+- does the effect of free time vary by sex?
+
+Covers the pipeline from research design through to PCA, split across 9 modular notebooks. Each notebook covers a distinct method with assumption testing before applying it. The focus is on process rather than findings: it shows a methodical approach to statistics, including recognising when assumptions don't hold and thinking through what that means for the results.
 
 `scipy` `statsmodels` `regression` `ANOVA`
 
@@ -85,7 +86,7 @@ I evaluated three commercial AI detection tools (Sapling, Originality.ai, Winsto
 - No general bias found against non-native speakers in unedited essays
 - Editing essays for grammar and spelling significantly increased misclassification rates, suggesting detectors rely on features of non-native writing that disappear when text is corrected
 - Country-specific biases observed. Contrary to prior work, native English speakers were more likely to be misclassified as AI than non-natives
-- Scope of project was quite limited with only one 200 word essay topic and one geographic region (Asia) 
+- Scope of project was quite limited with only one 200 word essay topic and one geographic region (Asia)
 - Findings reflect the state of AI detection tools in mid-2024 and should be read in that context
 
 ---
