@@ -30,9 +30,8 @@ Classifies 7 types of skin lesions from the HAM10000 dataset (~12,000 dermoscopy
 ### [Diabetes Prediction — Neural Network](diabetes_prediction_neural_network.ipynb)
 *March 2024*
 
-Predicts diabetes from CDC health survey data (42,415 instances, 22 variables). The focus was systematic evaluation rather than picking a single model — tested 10 ANN architectures, 8 batch sizes, and 3 optimisers, with dropout and early stopping. Includes subgroup analysis by sex and cholesterol level to check whether the model performs consistently across groups.
+Predicts diabetes from a health survey dataset (42,415 instances, 22 variables). The focus was systematic evaluation rather than picking a single model — tested 10 ANN architectures, 8 batch sizes, and 3 optimisers, with dropout and early stopping. Includes subgroup analysis by sex and cholesterol level to check whether the model performs consistently across groups.
 
-- Dataset: CDC Behavioral Risk Factor Surveillance System
 - Grid search across architecture, batch size, and optimiser combinations
 - Subgroup analysis to surface differential performance
 - Interpretability methods: precision/recall breakdown by class and subgroup
