@@ -63,7 +63,7 @@ Binary classification of face images as young (5–15) or old (50+) using a CNN 
 
 ---
 
-### [Student Performance - Statistical Analysis](student_performance_statistical_analysis/) ([notebook summaries](student_performance_statistical_analysis/README.md))
+### [Student Performance - Statistical Analysis](student_performance_statistical_analysis/)
 *September–December 2023*
 
 Statistical investigation into factors affecting secondary school grades in Portugal (maths and Portuguese, 2005–2006). 
@@ -75,6 +75,8 @@ Statistical investigation into factors affecting secondary school grades in Port
 Covers the pipeline from research design through to PCA, split across 9 modular notebooks. Each notebook covers a distinct method with assumption testing before applying it. The focus is on process rather than findings: it shows a methodical approach to statistics, including recognising when assumptions don't hold and thinking through what that means for the results.
 
 `scipy` `statsmodels` `regression` `ANOVA`
+
+[See more](student_performance_statistical_analysis/README.md)
 
 ---
 
