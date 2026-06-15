@@ -22,15 +22,15 @@ Some of the hypotheses explored:
 ### [Skin Lesion Classification - KNN & VGG16 Transfer Learning](skin_lesion_classification_knn_vgg16_transfer_learning.ipynb)
 *May 2024*
 
-Classifies 7 types of skin lesions from the HAM10000 dataset (~12,000 dermoscopy images). Fine-tuned a VGG16 network and compared it against a KNN baseline to evaluate the tradeoff between model complexity and performance. Class imbalance was a central challenge: the dataset is heavily skewed toward melanocytic nevi. Includes subgroup performance analysis by age, sex, and lesion localisation.
+Classifies 7 types of skin lesions from the HAM10000 dataset (~12,000 dermoscopy images). Fine-tuned a VGG16 network and compared it against a KNN baseline to evaluate the tradeoff between model complexity and performance. Class imbalance was a central challenge: the dataset is heavily skewed toward melanocytic nevi.
 
 - Dataset: [HAM10000](https://challenge.isic-archive.com/data/#2018) (ISIC 2018 Challenge), © ViDIR Group, Medical University of Vienna ([doi:10.1038/sdata.2018.161](https://doi.org/10.1038/sdata.2018.161))
 - Classes: melanoma, basal cell carcinoma, actinic keratoses, and 4 others
-- Techniques: transfer learning, data augmentation, class weighting, subgroup evaluation
+- Techniques: transfer learning, class weighting, subgroup evaluation
 - Interpretability methods: GradCAM++ saliency maps (VGG16), nearest neighbour visualisation (KNN), glassbox vs blackbox comparison
-- Ethical considerations: misclassification risks in a medical context, and whether performance holds equally across patient demographics
+- Ethical considerations: misclassification risks in a medical context, and whether performance holds equally across patient demographics (not available in the dataset)
 
-`transfer learning` `CNN` `VGG16` `KNN` `class imbalance` `medical imaging` `fairness evaluation` `XAI`
+`transfer learning` `CNN` `VGG16` `KNN` `class imbalance` `medical imaging` `XAI`
 
 ---
 
