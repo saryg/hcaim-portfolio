@@ -1,13 +1,14 @@
 # MSc Human-Centred AI - TU Dublin
 
-Coursework from my MSc in Human-Centred Artificial Intelligence at TU Dublin (2023–2024), covering machine learning, deep learning, statistics, and AI ethics. Projects span different data types: images (medical and facial), tabular health and survey data, and text.
+Coursework from my MSc in Human-Centred Artificial Intelligence at TU Dublin (2023–2024), covering machine learning, deep learning, statistics, and AI ethics. Projects span different data types: images, tabular, and text.
 
 Across the projects there were a few key concerns:
-- choosing datasets carefully before any modelling began
+- choosing datasets carefully before any modelling began, considering the content and sources
 - checking for imbalances and potential sources of bias
-- monitoring for overfitting throughout
+- monitoring for overfitting and underfitting throughout
 - being honest about what the results can and can't claim
 - evaluating models by subgroup to check whether performance held across demographics
+- transparency and explainability where possible, including exploring newer methods of explaining traditionally blackbox methods
 
 Some of the hypotheses explored:
 - does an explainable model for skin lesion classifier perform similarly to a blackbox model?
@@ -58,7 +59,7 @@ Statistical investigation into factors affecting secondary school grades in Port
 - does family support make a difference?
 - does the effect of free time vary by sex?
 
-Covers the pipeline from research design through to PCA, split across 9 modular notebooks. Each notebook covers a distinct method with assumption testing before applying it. The focus is on process rather than findings: it shows a methodical approach to statistics, including recognising when assumptions don't hold and thinking through what that means for the results.
+Covers the pipeline from research design through to PCA, split across 9 modular notebooks. Each notebook covers a distinct method with assumption testing before applying it. The focus is on process rather than findings: it shows a methodical approach to statistics, including recognising when assumptions don't hold and using alternative techniques when assumptions aren't met.
 
 
 [More info](student_performance_statistical_analysis/README.md)
