@@ -22,7 +22,7 @@ Some of the hypotheses explored:
 ### [Skin Lesion Classification - KNN & VGG16 Transfer Learning](skin_lesion_classification_knn_vgg16_transfer_learning.ipynb)
 *May 2024*
 
-Classifies 7 types of skin lesions from the HAM10000 dataset (~12,000 dermoscopy images). Fine-tuned a VGG16 network and compared it against a KNN baseline to evaluate the tradeoff between model complexity and performance. Class imbalance was a central challenge: the dataset is heavily skewed toward melanocytic nevi.
+Classifies 7 types of skin lesions from the HAM10000 dataset (~12,000 dermoscopy images). Fine-tuned a VGG16 network and compared it against a KNN baseline to evaluate the tradeoff between model complexity, performance and explainability. Class imbalance was a central challenge: the dataset is heavily skewed toward melanocytic nevi.
 
 - Dataset: [HAM10000](https://challenge.isic-archive.com/data/#2018) (ISIC 2018 Challenge), © ViDIR Group, Medical University of Vienna ([doi:10.1038/sdata.2018.161](https://doi.org/10.1038/sdata.2018.161))
 - Classes: melanoma, basal cell carcinoma, actinic keratoses, and 4 others
@@ -37,10 +37,10 @@ Classifies 7 types of skin lesions from the HAM10000 dataset (~12,000 dermoscopy
 ### [Facial Age Classification - CNN on UTKFace](facial_age_classification_cnn_utkface.ipynb)
 *March 2024*
 
-Binary classification of face images as young (5–15) or old (50+) using a CNN trained on a filtered subset of UTKFace. The main focus is on how dataset construction decisions (filtering by ethnicity, balancing by gender) introduce or mitigate bias, and what that means for a deployed age detection system. Model performance was modest (75% on a small test set); the value of the notebook is in the reasoning around data choices rather than the results themselves.
+Binary classification of face images as young (5–15) or old (50+) using a CNN trained on a filtered subset of UTKFace. The main focus is on predicting age from images, and whether identifying the features driving predictions is realistically feasible.  Model performance was modest (75% on a small test set); the value of the notebook is in the reasoning around data choices rather than the results themselves.
 
 - Dataset: UTKFace (filtered subset: 1,000 images, balanced by class and gender)
-- Explicit analysis of gender distribution within age classes and its effect on what the model learns
+- Analysis of gender distribution within age classes and its effect on what the model learns
 - Ethical considerations: implications of automated age detection, and how dataset construction choices affect fairness
 - Interpretability methods: GradCAM++ saliency maps showing which facial features drive predictions
 - Deployed as a REST API using Docker and Azure
@@ -89,7 +89,7 @@ I evaluated three commercial AI detection tools (Sapling, Originality.ai, Winsto
 - No general bias found against non-native speakers in unedited essays
 - Editing essays for grammar and spelling significantly increased misclassification rates, suggesting detectors rely on features of non-native writing that disappear when text is corrected
 - Country-specific biases observed. Contrary to prior work, native English speakers were more likely to be misclassified as AI than non-natives
-- Scope of project was quite limited with only one 200 word essay topic and one geographic region (Asia)
+- Scope of project was quite limited with 200 word essay topic and one geographic region (Asia)
 - Findings reflect the state of AI detection tools in mid-2024 and should be read in that context
 
 ---
