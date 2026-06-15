@@ -34,20 +34,6 @@ Classifies 7 types of skin lesions from the HAM10000 dataset (~12,000 dermoscopy
 
 ---
 
-### [Diabetes Prediction - Neural Network](diabetes_prediction_neural_network.ipynb)
-*March 2024*
-
-Predicts diabetes from a health survey dataset (42,415 instances, 22 variables). The focus was systematic evaluation rather than picking a single model: tested 10 ANN architectures, 8 batch sizes, and 3 optimisers, with dropout and early stopping. Includes subgroup analysis by sex and cholesterol level to check whether the model performs consistently across groups.
-
-- Grid search across architecture, batch size, and optimiser combinations
-- Subgroup analysis to surface differential performance
-- Interpretability methods: precision/recall breakdown by class and subgroup
-- Ethical considerations: implications of false positives and false negatives in a health context, and whether the model performs consistently across demographic groups
-
-`Keras` `ANN` `hyperparameter tuning` `grid search` `subgroup analysis` `healthcare`
-
----
-
 ### [Facial Age Classification - CNN on UTKFace](facial_age_classification_cnn_utkface.ipynb)
 *March 2024*
 
@@ -79,6 +65,19 @@ Covers the pipeline from research design through to PCA, split across 9 modular 
 
 `scipy` `statsmodels` `regression` `ANOVA`
 
+---
+
+### [Diabetes Prediction - Neural Network](diabetes_prediction_neural_network.ipynb)
+*March 2024*
+
+Predicts diabetes from a health survey dataset (42,415 instances, 22 variables). The focus was systematic evaluation rather than picking a single model: tested 10 ANN architectures, 8 batch sizes, and 3 optimisers, with dropout and early stopping. Includes subgroup analysis by sex and cholesterol level to check whether the model performs consistently across groups.
+
+- Grid search across architecture, batch size, and optimiser combinations
+- Subgroup analysis to surface differential performance
+- Interpretability methods: precision/recall breakdown by class and subgroup
+- Ethical considerations: implications of false positives and false negatives in a health context, and whether the model performs consistently across demographic groups
+
+`Keras` `ANN` `hyperparameter tuning` `grid search` `subgroup analysis` `healthcare`
 
 ---
 
