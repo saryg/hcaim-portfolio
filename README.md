@@ -11,7 +11,7 @@ Across the projects there were a few key concerns:
 
 Some of the hypotheses explored:
 - does an explainable model for skin lesion classifier perform similarly to a blackbox model?
-- does the way you filter and balance a facial image dataset affect what the model actually learns?
+- can you explain what features are used by a cnn to predict age based on faces?
 - do AI content detectors flag non-native English writers at higher rates?
 - does drinking during the week predict grades?
 
