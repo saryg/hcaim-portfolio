@@ -10,7 +10,7 @@ Across the projects there were a few key concerns:
 - evaluating models by subgroup to check whether performance held across demographics
 
 Some of the hypotheses explored:
-- does a skin lesion classifier perform equally well across age groups and body sites?
+- does an explainable model for skin lesion classifier perform similarly to a blackbox model?
 - does the way you filter and balance a facial image dataset affect what the model actually learns?
 - do AI content detectors flag non-native English writers at higher rates?
 - does drinking during the week predict grades?
